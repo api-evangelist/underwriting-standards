@@ -1,0 +1,82 @@
+{
+  "summary": "Commercial Cyber Liability Underwriting Submission",
+  "description": "Example of a cyber liability underwriting submission for a mid-size technology company, following ACORD data standards.",
+  "submissionId": "sub-2026-abc123",
+  "externalReference": "BRK-2026-00547",
+  "submittedAt": "2026-05-03T09:00:00Z",
+  "status": "submitted",
+  "broker": {
+    "partyId": "party-broker-001",
+    "name": "Acme Insurance Brokers LLC",
+    "type": "broker",
+    "taxId": "12-3456789",
+    "address": {
+      "street1": "100 Broker Lane",
+      "city": "Chicago",
+      "state": "IL",
+      "postalCode": "60601",
+      "country": "US"
+    },
+    "contact": {
+      "email": "submissions@acmebrokers.com",
+      "phone": "+1-312-555-0100"
+    }
+  },
+  "insured": {
+    "partyId": "party-insured-456",
+    "name": "Quantum Software Solutions Inc.",
+    "type": "organization",
+    "taxId": "98-7654321",
+    "address": {
+      "street1": "555 Tech Park Drive",
+      "city": "Austin",
+      "state": "TX",
+      "postalCode": "78701",
+      "country": "US"
+    }
+  },
+  "risk": {
+    "lineOfBusiness": "cyber",
+    "naicsCode": "541511",
+    "description": "Software development company providing SaaS HR management tools to enterprise clients. Processes personally identifiable information for approximately 500,000 end users.",
+    "annualRevenue": 12500000,
+    "numberOfEmployees": 85,
+    "yearsInBusiness": 7,
+    "locations": [
+      {
+        "street1": "555 Tech Park Drive",
+        "city": "Austin",
+        "state": "TX",
+        "postalCode": "78701",
+        "country": "US"
+      }
+    ],
+    "priorLosses": []
+  },
+  "requestedCoverages": [
+    {
+      "coverageType": "cyber-liability",
+      "effectiveDate": "2026-06-01",
+      "expirationDate": "2027-06-01",
+      "limitAmount": 5000000,
+      "deductibleAmount": 50000
+    },
+    {
+      "coverageType": "network-business-interruption",
+      "effectiveDate": "2026-06-01",
+      "expirationDate": "2027-06-01",
+      "limitAmount": 2000000,
+      "deductibleAmount": 25000
+    }
+  ],
+  "documents": [
+    {
+      "documentId": "doc-001",
+      "name": "ACORD 133 Cyber Application",
+      "type": "acord-application",
+      "mimeType": "application/pdf",
+      "uploadedAt": "2026-05-03T08:45:00Z"
+    }
+  ],
+  "notes": "Clean loss history. SOC 2 Type II certified. Requesting competitive pricing for 3-year relationship."
+}

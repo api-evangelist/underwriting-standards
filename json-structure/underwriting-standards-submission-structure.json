@@ -1,0 +1,51 @@
+{
+  "title": "Underwriting Submission Structure",
+  "description": "Field-level documentation for an insurance underwriting submission entity.",
+  "type": "object",
+  "fields": [
+    { "name": "submissionId", "type": "string", "required": true, "description": "Unique identifier for the submission" },
+    { "name": "externalReference", "type": "string", "required": false, "description": "Broker or MGA reference number" },
+    { "name": "submittedAt", "type": "datetime", "required": true, "description": "ISO 8601 submission timestamp" },
+    { "name": "status", "type": "enum", "required": false, "description": "Submission lifecycle status",
+      "values": ["draft", "submitted", "under-review", "referred", "accepted", "declined", "quoted", "bound"] },
+    { "name": "broker", "type": "Party", "required": false, "description": "Submitting broker or agent" },
+    { "name": "insured", "type": "Party", "required": false, "description": "Party seeking insurance" },
+    { "name": "risk", "type": "Risk", "required": true, "description": "The risk being underwritten" },
+    { "name": "requestedCoverages", "type": "array<Coverage>", "required": true, "description": "Requested coverage types, limits, and deductibles" },
+    { "name": "quotes", "type": "array<Quote>", "required": false, "description": "Underwriter quotes responding to the submission" },
+    { "name": "documents", "type": "array<Document>", "required": false, "description": "Supporting documents (ACORD applications, loss runs, financials)" },
+    { "name": "notes", "type": "string", "required": false, "description": "Free-text broker notes" }
+  ],
+  "definitions": {
+    "Party": {
+      "fields": [
+        { "name": "partyId", "type": "string", "description": "Unique party identifier" },
+        { "name": "name", "type": "string", "required": true, "description": "Legal name" },
+        { "name": "type", "type": "enum", "description": "individual, organization, broker, carrier, mga, reinsurer" },
+        { "name": "taxId", "type": "string", "description": "EIN or SSN" },
+        { "name": "address", "type": "Address", "description": "Physical address" },
+        { "name": "contact", "type": "object", "description": "Email, phone, website" }
+      ]
+    },
+    "Risk": {
+      "fields": [
+        { "name": "lineOfBusiness", "type": "enum", "required": true, "description": "Primary line of business" },
+        { "name": "naicsCode", "type": "string", "description": "NAICS industry code" },
+        { "name": "annualRevenue", "type": "number", "description": "Annual revenue in USD" },
+        { "name": "numberOfEmployees", "type": "integer", "description": "Total employees" },
+        { "name": "yearsInBusiness", "type": "integer", "description": "Years operating" },
+        { "name": "locations", "type": "array<Address>", "description": "Risk locations" },
+        { "name": "priorLosses", "type": "array<LossRecord>", "description": "Loss history" }
+      ]
+    },
+    "Coverage": {
+      "fields": [
+        { "name": "coverageType", "type": "string", "required": true, "description": "Type of coverage" },
+        { "name": "effectiveDate", "type": "date", "description": "Policy start date" },
+        { "name": "expirationDate", "type": "date", "description": "Policy end date" },
+        { "name": "limitAmount", "type": "number", "description": "Coverage limit in USD" },
+        { "name": "deductibleAmount", "type": "number", "description": "Deductible in USD" }
+      ]
+    }
+  }
+}

@@ -1,0 +1,125 @@
+name: Underwriting Standards Vocabulary
+description: >-
+  Vocabulary and taxonomy for insurance underwriting standards, data exchange
+  formats, and the API ecosystem connecting carriers, brokers, MGAs, and
+  InsurTech platforms.
+tags:
+  - Underwriting
+  - Insurance
+  - Standards
+  - ACORD
+  - InsurTech
+modified: '2026-05-03'
+
+domains:
+  - name: Underwriting Process
+    description: Core stages and concepts in the insurance underwriting workflow
+    terms:
+      - term: Underwriting
+        definition: The process by which an insurer evaluates a risk and decides whether to accept it, and at what premium and terms
+      - term: Submission
+        definition: A formal request from a broker or insured to an insurer for coverage, including risk information and requested terms
+      - term: Quote
+        definition: An insurer's offer to provide coverage at a specified premium, with stated conditions and exclusions
+      - term: Binder
+        definition: A temporary document providing proof of insurance coverage before a formal policy is issued
+      - term: Policy
+        definition: The formal contract between insurer and insured specifying coverage terms, limits, exclusions, and premium
+      - term: Referral
+        definition: A submission that requires additional senior underwriter review due to complexity, size, or unusual risk characteristics
+      - term: Declination
+        definition: The insurer's decision to refuse coverage for a submitted risk
+      - term: Renewal
+        definition: The process of continuing coverage for an existing policy at the end of its term
+
+  - name: Risk Assessment
+    description: Concepts used in evaluating and classifying insurance risks
+    terms:
+      - term: Risk
+        definition: The subject of insurance — the person, property, or liability exposure being insured
+      - term: Line of Business
+        definition: A category of insurance coverage type (property, liability, cyber, workers comp, etc.)
+      - term: Exposure
+        definition: The quantifiable amount of a risk — revenue, payroll, square footage, number of vehicles, etc.
+      - term: Loss Run
+        definition: A historical record of claims and losses for an insured, used to assess prior loss experience
+      - term: NAICS Code
+        definition: North American Industry Classification System code identifying the insured's primary business activity
+      - term: SIC Code
+        definition: Standard Industrial Classification code — a legacy industry classification system
+      - term: Moral Hazard
+        definition: The risk that an insured may behave differently because they are covered by insurance
+      - term: Adverse Selection
+        definition: The tendency for higher-risk individuals or entities to seek more insurance than lower-risk ones
+
+  - name: Coverage Concepts
+    description: Insurance coverage structures, limits, and conditions
+    terms:
+      - term: Coverage Limit
+        definition: The maximum amount an insurer will pay for a covered loss
+      - term: Deductible
+        definition: The amount the insured must pay out-of-pocket before insurance coverage applies
+      - term: Self-Insured Retention (SIR)
+        definition: Similar to a deductible but applies within the policy layer; the insured handles claims up to this amount
+      - term: Occurrence Limit
+        definition: The maximum paid for any single loss event
+      - term: Aggregate Limit
+        definition: The maximum total amount paid for all covered losses during the policy period
+      - term: Exclusion
+        definition: A specific condition, circumstance, or peril not covered by a policy
+      - term: Endorsement
+        definition: A modification to the standard policy language that adds, removes, or changes coverage
+      - term: Retroactive Date
+        definition: The earliest date from which claims can be reported under a claims-made policy
+
+  - name: Data Standards
+    description: Industry standards for insurance data exchange and interoperability
+    terms:
+      - term: ACORD
+        definition: Association for Cooperative Operations Research and Development — the primary insurance data standards body
+        url: https://www.acord.org/
+      - term: ACORD NGDS
+        definition: ACORD Next-Generation Digital Standards — JSON/YAML transaction-centric standards for RESTful APIs
+        url: https://www.acord.org/standards-architecture/acord-data-standards/next-generation-digital-standards
+      - term: LDEx
+        definition: LIMRA Data Exchange Standards — free standards for employee benefits data exchange via REST API (OpenAPI 3.1)
+        url: https://www.limra.com/en/solutions-and-services/data-exchange-standards/
+      - term: ACORD Forms
+        definition: Standardized paper and electronic forms for documenting insurance transactions (ACORD 25, ACORD 101, ACORD 133, etc.)
+      - term: ACORD Information Model
+        definition: ACORD's formal representation of data elements across all lines of business — Policy, Product, Party, Claims
+      - term: EDI
+        definition: Electronic Data Interchange — traditional format-based file exchange predating REST APIs, still used in some insurance contexts
+
+  - name: Parties and Roles
+    description: Entities and roles in the insurance value chain
+    terms:
+      - term: Carrier
+        definition: The insurance company that accepts risk and pays covered losses
+        aliases: [Insurer]
+      - term: Broker
+        definition: An intermediary that represents the insured in placing coverage with carriers
+      - term: MGA
+        definition: Managing General Agent — a wholesale intermediary that underwrites on behalf of carriers within delegated authority
+        aliases: [Managing General Agent]
+      - term: Insured
+        definition: The party whose risk is covered by the insurance policy
+        aliases: [Policyholder]
+      - term: Reinsurer
+        definition: An insurer that accepts risk from other insurers, providing capacity and catastrophe protection
+      - term: Program Administrator
+        definition: An MGA or program manager that operates a book of business for a specific class of risk
+
+  - name: InsurTech Concepts
+    description: Technology and digital innovation concepts in insurance
+    terms:
+      - term: InsurTech
+        definition: Technology companies and innovations disrupting or enabling the insurance industry
+      - term: Straight-Through Processing (STP)
+        definition: Automated underwriting and policy issuance without human intervention for eligible risks
+      - term: Submission Intake API
+        definition: A REST API enabling brokers to submit risks programmatically to carrier systems
+      - term: Data Prefill
+        definition: Automatically populating application fields using third-party data sources (business registries, property databases, etc.)
+      - term: Open Insurance
+        definition: The emerging movement to standardize insurance data sharing via open APIs, analogous to Open Banking

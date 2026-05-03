@@ -1,0 +1,98 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "schema": "https://schema.org/",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "fibo": "https://spec.edmcouncil.org/fibo/ontology/FND/",
+    "uw": "https://github.com/api-evangelist/underwriting-standards/blob/main/json-ld/underwriting-standards-context.jsonld#",
+
+    "Submission": "uw:UnderwritingSubmission",
+    "Risk": "uw:InsuranceRisk",
+    "Coverage": "uw:Coverage",
+    "Quote": "uw:UnderwritingQuote",
+    "Party": "schema:Organization",
+    "Document": "schema:CreativeWork",
+
+    "submissionId": "schema:identifier",
+    "externalReference": {
+      "@id": "uw:externalReference",
+      "@type": "xsd:string"
+    },
+    "submittedAt": {
+      "@id": "schema:dateCreated",
+      "@type": "xsd:dateTime"
+    },
+    "status": {
+      "@id": "uw:submissionStatus",
+      "@type": "@vocab"
+    },
+    "broker": {
+      "@id": "uw:broker",
+      "@type": "@id"
+    },
+    "insured": {
+      "@id": "uw:insured",
+      "@type": "@id"
+    },
+    "risk": {
+      "@id": "uw:risk",
+      "@type": "@id"
+    },
+    "requestedCoverages": {
+      "@id": "uw:requestedCoverages",
+      "@container": "@list"
+    },
+    "quotes": {
+      "@id": "uw:quotes",
+      "@container": "@list"
+    },
+    "documents": {
+      "@id": "schema:hasPart",
+      "@container": "@list"
+    },
+    "name": "schema:name",
+    "description": "schema:description",
+    "taxId": "schema:taxID",
+    "address": "schema:address",
+    "lineOfBusiness": {
+      "@id": "uw:lineOfBusiness",
+      "@type": "@vocab"
+    },
+    "naicsCode": {
+      "@id": "uw:naicsCode",
+      "@type": "xsd:string"
+    },
+    "annualRevenue": {
+      "@id": "schema:annualRevenue",
+      "@type": "xsd:decimal"
+    },
+    "numberOfEmployees": {
+      "@id": "schema:numberOfEmployees",
+      "@type": "xsd:integer"
+    },
+    "coverageType": {
+      "@id": "uw:coverageType",
+      "@type": "xsd:string"
+    },
+    "limitAmount": {
+      "@id": "uw:limitAmount",
+      "@type": "xsd:decimal"
+    },
+    "deductibleAmount": {
+      "@id": "uw:deductibleAmount",
+      "@type": "xsd:decimal"
+    },
+    "premium": {
+      "@id": "uw:premium",
+      "@type": "xsd:decimal"
+    },
+    "conditions": {
+      "@id": "uw:conditions",
+      "@container": "@list"
+    },
+    "exclusions": {
+      "@id": "uw:exclusions",
+      "@container": "@list"
+    }
+  }
+}
