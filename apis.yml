@@ -81,7 +81,7 @@ common:
     url: https://www.acord.org/standards-architecture/acord-data-standards
   - type: Standard
     url: https://www.limra.com/en/solutions-and-services/data-exchange-standards/
-  - type: JSON-LD
+  - type: JSONLD
     url: json-ld/underwriting-standards-context.jsonld
   - type: Vocabulary
     url: vocabulary/underwriting-standards-vocabulary.yml
