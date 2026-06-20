@@ -10,7 +10,7 @@ description: >-
   initiatives.
 url: https://raw.githubusercontent.com/api-evangelist/underwriting-standards/refs/heads/main/apis.yml
 type: Index
-image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
   - Underwriting
   - Insurance
@@ -31,7 +31,7 @@ apis:
       - Property And Casualty
       - Life Insurance
       - Reinsurance
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     baseURL: https://www.acord.org
     humanURL: https://www.acord.org/standards-architecture/acord-data-standards/next-generation-digital-standards
     properties:
@@ -57,7 +57,7 @@ apis:
       - Standards
       - Employee Benefits
       - Life Insurance
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     baseURL: https://www.limra.com
     humanURL: https://www.limra.com/en/solutions-and-services/data-exchange-standards/
     properties:
