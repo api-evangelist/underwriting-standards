@@ -77,9 +77,9 @@ common:
     url: https://www.acord.org/
   - type: Website
     url: https://www.limra.com/
-  - type: Standard
+  - type: Standards
     url: https://www.acord.org/standards-architecture/acord-data-standards
-  - type: Standard
+  - type: Standards
     url: https://www.limra.com/en/solutions-and-services/data-exchange-standards/
   - type: JSONLD
     url: json-ld/underwriting-standards-context.jsonld
