@@ -73,6 +73,8 @@ apis:
       Use cases include enrollment, eligibility, coverage changes, terminations,
       and evidence of insurability.
 common:
+  - type: DomainSecurity
+    url: security/underwriting-standards-domain-security.yml
   - type: Website
     url: https://www.acord.org/
   - type: Website
