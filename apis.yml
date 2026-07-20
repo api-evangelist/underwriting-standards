@@ -1,5 +1,6 @@
 aid: underwriting-standards
 name: Underwriting Standards
+kind: topic
 description: >-
   A curated collection of data standards, APIs, and specifications used in
   insurance underwriting. This covers the landscape of industry-wide data
