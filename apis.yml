@@ -41,7 +41,7 @@ tags:
   - Standards
   - ACORD
   - Data Exchange
-  - Insurtech
+  - InsurTech
 tags_raw:
   - Underwriting
   - Insurance
@@ -59,7 +59,7 @@ apis:
       - Insurance
       - ACORD
       - Standards
-      - Property and Casualty
+      - Property And Casualty
       - Life Insurance
       - Reinsurance
     tags_raw:
