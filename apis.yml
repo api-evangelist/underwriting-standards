@@ -70,7 +70,6 @@ apis:
       - Life Insurance
       - Reinsurance
     image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    baseURL: https://www.acord.org
     humanURL: https://www.acord.org/standards-architecture/acord-data-standards/next-generation-digital-standards
     properties:
       - url: https://www.acord.org/standards-architecture/acord-data-standards
