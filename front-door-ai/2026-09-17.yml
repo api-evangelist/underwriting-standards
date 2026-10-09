@@ -7,14 +7,18 @@ front_door_ai:
   probed_at: '2026-09-17'
   host: www.acord.org
   final_host: www.acord.org
-  ownership: own
-  owner: underwriting-standards
-  shares_host_with: null
+  ownership: shared
+  owner: acord
+  shares_host_with:
+  - acord
   inherited_from: null
+  alias_of: null
   verdict: scored
-  score: 6
+  score: null
+  band: null
+  band_label: null
   host_score: 6
-  density: 10.71
+  density: null
   words: 560
   tiers:
     agentic: 2

@@ -9,6 +9,9 @@ artifacts:
   finops/underwriting-standards-finops.yml:
     method: generated
     evidence: declared in the artifact
+  front-door-ai/2026-09-17.yml:
+    method: unknown
+    evidence: no authorship recorded
   json-ld/underwriting-standards-context.jsonld:
     method: unknown
     evidence: no authorship recorded
